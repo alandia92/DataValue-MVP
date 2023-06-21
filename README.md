@@ -14,4 +14,5 @@ Los datos se visualizan en PowerBi
 
 También se han sacado del apartado de quejas/sugerencias las palabras clave.\
 Por último, se han realizado tres modelos de prueba de machine learning para predecir las necesidades futuras y detectar patrones y tendecias.\
+
 Con esta propuesta podempos aprovechar los datos recopilados, para poder obtener información valiosa y aplicarla en diversas áreas, generando un impacto positivo en la toma de decisiones y calidad de vida de los usuarios.
