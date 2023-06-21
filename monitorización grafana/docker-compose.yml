@@ -1,0 +1,31 @@
+version: "3"
+networks:
+  bridge:
+    driver: bridge
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    hostname: prometheus
+    restart: unless-stopped
+    volumes:
+      - $PWD/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - $PWD/prometheus/prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    ports:
+      - '9090:9090'
+    networks:
+      - bridge
+  grafana:
+    image: grafana/grafana-oss
+    restart: unless-stopped
+    container_name: grafana
+    hostname: grafana
+    ports:
+      - '3000:3000'
+    volumes:
+      - $PWD/grafana:/var/lib/grafana
+    networks:
+      - bridge
