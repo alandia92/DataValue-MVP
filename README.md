@@ -5,7 +5,8 @@ Web app para solucionar el problema de la soledad en las personas mayores, el de
 
 Como parte del proyecto, se ha realizado una base de datos falsa en MongoDB. Hemos llevado a cabo una simulación con 10000 usuarios y 50000 registros aleatorios en la aplicación para analizar que tipo de información podemos extraer de esta aplicación.\
 
-Se ha realizado un análisis de datos de las necesidades de los usuarios por mes, sexo, edad y lugar de residencia. Los datos se visualizan en PowerBi
+Se ha realizado un análisis de datos de las necesidades de los usuarios por mes, sexo, edad y lugar de residencia.\
+Los datos se visualizan en PowerBi
 
 
 ![Presentación PpowerBi](https://github.com/alandia92/DataValue-MVP/blob/main/presentaci%C3%B3n/imagen%20powerbi.png)
